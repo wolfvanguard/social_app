@@ -23,6 +23,22 @@ struct ContentView: View {
                     .fontWeight(/*@START_MENU_TOKEN@*/.semibold/*@END_MENU_TOKEN@*/)
                 
                 Text("Let's re-kindle the magic between people")
+                    .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
+                Button("Login") {
+                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                    /*
+                     Leads to login page for email/username and password
+                     */
+                }
+                .buttonStyle(.borderedProminent)
+                Text("New user?")
+                Button("Sign Up instead") {
+                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                    /*
+                     Leads to signup page for email/username and password
+                     */
+                }
+                .buttonStyle(.borderless)
             }
         }
 
