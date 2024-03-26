@@ -12,6 +12,7 @@
 		131CB2BF2BACB3E6007AFF49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 131CB2BE2BACB3E6007AFF49 /* Assets.xcassets */; };
 		131CB2C22BACB3E6007AFF49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 131CB2C12BACB3E6007AFF49 /* Preview Assets.xcassets */; };
 		133FBA832BAD9FFF0051F0F1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133FBA822BAD9FFF0051F0F1 /* LoginView.swift */; };
+		13D08A822BB341A0000EA1C0 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D08A812BB341A0000EA1C0 /* SignupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,10 +22,19 @@
 		131CB2BE2BACB3E6007AFF49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		131CB2C12BACB3E6007AFF49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		133FBA822BAD9FFF0051F0F1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		13D08A812BB341A0000EA1C0 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		13FEDE0C2BB331F50089F4C9 /* socialapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = socialapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		131CB2B42BACB3E4007AFF49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13FEDE092BB331F50089F4C9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				131CB2B72BACB3E4007AFF49 /* spartans.app */,
+				13FEDE0C2BB331F50089F4C9 /* socialapp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,11 +64,12 @@
 		131CB2B92BACB3E4007AFF49 /* spartans */ = {
 			isa = PBXGroup;
 			children = (
+				133FBA822BAD9FFF0051F0F1 /* LoginView.swift */,
+				13D08A812BB341A0000EA1C0 /* SignupView.swift */,
 				131CB2BA2BACB3E4007AFF49 /* spartansApp.swift */,
 				131CB2BC2BACB3E4007AFF49 /* ContentView.swift */,
 				131CB2BE2BACB3E6007AFF49 /* Assets.xcassets */,
 				131CB2C02BACB3E6007AFF49 /* Preview Content */,
-				133FBA822BAD9FFF0051F0F1 /* LoginView.swift */,
 			);
 			path = spartans;
 			sourceTree = "<group>";
@@ -90,6 +102,23 @@
 			productReference = 131CB2B72BACB3E4007AFF49 /* spartans.app */;
 			productType = "com.apple.product-type.application";
 		};
+		13FEDE0B2BB331F50089F4C9 /* socialapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13FEDE192BB331F80089F4C9 /* Build configuration list for PBXNativeTarget "socialapp" */;
+			buildPhases = (
+				13FEDE082BB331F50089F4C9 /* Sources */,
+				13FEDE092BB331F50089F4C9 /* Frameworks */,
+				13FEDE0A2BB331F50089F4C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = socialapp;
+			productName = socialapp;
+			productReference = 13FEDE0C2BB331F50089F4C9 /* socialapp.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -101,6 +130,9 @@
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					131CB2B62BACB3E4007AFF49 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					13FEDE0B2BB331F50089F4C9 = {
 						CreatedOnToolsVersion = 15.3;
 					};
 				};
@@ -119,6 +151,7 @@
 			projectRoot = "";
 			targets = (
 				131CB2B62BACB3E4007AFF49 /* spartans */,
+				13FEDE0B2BB331F50089F4C9 /* socialapp */,
 			);
 		};
 /* End PBXProject section */
@@ -133,6 +166,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		13FEDE0A2BB331F50089F4C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,9 +180,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13D08A822BB341A0000EA1C0 /* SignupView.swift in Sources */,
 				133FBA832BAD9FFF0051F0F1 /* LoginView.swift in Sources */,
 				131CB2BD2BACB3E4007AFF49 /* ContentView.swift in Sources */,
 				131CB2BB2BACB3E4007AFF49 /* spartansApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13FEDE082BB331F50089F4C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +324,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"spartans/Preview Content\"";
+				DEVELOPMENT_TEAM = YWQNV768LW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -283,6 +332,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +354,36 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"spartans/Preview Content\"";
+				DEVELOPMENT_TEAM = YWQNV768LW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.keertikumar.spartans;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		13FEDE172BB331F80089F4C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"socialapp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -316,7 +396,35 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.keertikumar.spartans;
+				PRODUCT_BUNDLE_IDENTIFIER = com.keertikumar.socialapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		13FEDE182BB331F80089F4C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"socialapp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.keertikumar.socialapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -341,6 +449,15 @@
 			buildConfigurations = (
 				131CB2C62BACB3E6007AFF49 /* Debug */,
 				131CB2C72BACB3E6007AFF49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13FEDE192BB331F80089F4C9 /* Build configuration list for PBXNativeTarget "socialapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13FEDE172BB331F80089F4C9 /* Debug */,
+				13FEDE182BB331F80089F4C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
