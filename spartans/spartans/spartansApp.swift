@@ -16,7 +16,7 @@ struct spartansApp: App {
             if (signin_requested){
                 LoginView(signin_requested: $signin_requested, signup_requested: $signup_requested)
             } else if (signup_requested){
-                SignupView()
+                SignupView(siginin_requested: $signin_requested, signup_requested: $signup_requested)
             } else{
                 ContentView(signin_requested: $signin_requested, signup_requested: $signup_requested)
             }

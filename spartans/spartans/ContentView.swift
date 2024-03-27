@@ -35,6 +35,7 @@ struct ContentView: View {
                 
                 Text("Let's re-kindle the magic between people")
                     .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
+                    .multilineTextAlignment(.center)
                 Button(action: {
                     login()
                 }, label: {

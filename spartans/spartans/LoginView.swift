@@ -26,7 +26,7 @@ struct LoginView: View {
                 }.padding()
                 HStack{
                     Text("Password: ")
-                    TextField("Type paswword here", text: $pw)
+                    TextField("Type password here", text: $pw)
                 }.padding()
                 Button{
                     signin()
