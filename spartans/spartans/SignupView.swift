@@ -27,7 +27,7 @@ struct SignupView: View {
                 Text("Enter your information").padding(.top, 20).padding(.bottom, 30).font(.largeTitle)
                 HStack{
                     Text("Firstname: ")
-                    TextField("Type firstname here", text: $username)
+                    TextField("Type firstname here", text: $firstname)
                 }.padding()
                 HStack{
                     Text("Lastname: ")
@@ -59,7 +59,6 @@ struct SignupView: View {
                 } label: {
                     Text("Sign in instead")
                 }.padding(.bottom, 10)
-
                 
             }.background().padding().cornerRadius(60.0)
         }
@@ -72,7 +71,10 @@ struct SignupView: View {
         
     }
     func signup(){
-        //Direct to home screen/ User is signed up
+        // information auth, check if database already contains the entry
+        // if valid:
+        // Update Database with the collected information
+        // Direct to home screen/ User is signed up
     }
 }
 

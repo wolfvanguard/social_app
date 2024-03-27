@@ -62,7 +62,7 @@ struct ContentView: View {
     }
     func signup(){
         self.signup_requested = true
-        self.signup_requested = false
+        self.signin_requested = false
     }
 }
 

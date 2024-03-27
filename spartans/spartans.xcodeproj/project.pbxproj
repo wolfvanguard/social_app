@@ -13,6 +13,7 @@
 		131CB2C22BACB3E6007AFF49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 131CB2C12BACB3E6007AFF49 /* Preview Assets.xcassets */; };
 		133FBA832BAD9FFF0051F0F1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133FBA822BAD9FFF0051F0F1 /* LoginView.swift */; };
 		13D08A822BB341A0000EA1C0 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D08A812BB341A0000EA1C0 /* SignupView.swift */; };
+		13D08A842BB4DE0D000EA1C0 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D08A832BB4DE0D000EA1C0 /* HomePageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		131CB2C12BACB3E6007AFF49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		133FBA822BAD9FFF0051F0F1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		13D08A812BB341A0000EA1C0 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		13D08A832BB4DE0D000EA1C0 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		13FEDE0C2BB331F50089F4C9 /* socialapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = socialapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -64,6 +66,7 @@
 		131CB2B92BACB3E4007AFF49 /* spartans */ = {
 			isa = PBXGroup;
 			children = (
+				13D08A832BB4DE0D000EA1C0 /* HomePageView.swift */,
 				133FBA822BAD9FFF0051F0F1 /* LoginView.swift */,
 				13D08A812BB341A0000EA1C0 /* SignupView.swift */,
 				131CB2BA2BACB3E4007AFF49 /* spartansApp.swift */,
@@ -184,6 +187,7 @@
 				133FBA832BAD9FFF0051F0F1 /* LoginView.swift in Sources */,
 				131CB2BD2BACB3E4007AFF49 /* ContentView.swift in Sources */,
 				131CB2BB2BACB3E4007AFF49 /* spartansApp.swift in Sources */,
+				13D08A842BB4DE0D000EA1C0 /* HomePageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
