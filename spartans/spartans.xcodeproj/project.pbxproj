@@ -21,6 +21,7 @@
 		13D08A932BB796D3000EA1C0 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D08A922BB796D3000EA1C0 /* AuthView.swift */; };
 		13D08A952BB79728000EA1C0 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D08A942BB79728000EA1C0 /* SignInView.swift */; };
 		13D08A972BB7973E000EA1C0 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D08A962BB7973E000EA1C0 /* SignUpView.swift */; };
+		13D08A992BB7A5CF000EA1C0 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D08A982BB7A5CF000EA1C0 /* AuthenticationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		13D08A922BB796D3000EA1C0 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		13D08A942BB79728000EA1C0 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		13D08A962BB7973E000EA1C0 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		13D08A982BB7A5CF000EA1C0 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		13FEDE0C2BB331F50089F4C9 /* socialapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = socialapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 				13D08A922BB796D3000EA1C0 /* AuthView.swift */,
 				13D08A942BB79728000EA1C0 /* SignInView.swift */,
 				13D08A962BB7973E000EA1C0 /* SignUpView.swift */,
+				13D08A982BB7A5CF000EA1C0 /* AuthenticationManager.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				13D08A822BB341A0000EA1C0 /* SignupView.swift in Sources */,
 				13D08A952BB79728000EA1C0 /* SignInView.swift in Sources */,
 				133FBA832BAD9FFF0051F0F1 /* LoginView.swift in Sources */,
+				13D08A992BB7A5CF000EA1C0 /* AuthenticationManager.swift in Sources */,
 				13D08A932BB796D3000EA1C0 /* AuthView.swift in Sources */,
 				13D08A972BB7973E000EA1C0 /* SignUpView.swift in Sources */,
 				131CB2BD2BACB3E4007AFF49 /* ContentView.swift in Sources */,
