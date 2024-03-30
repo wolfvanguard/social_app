@@ -17,24 +17,42 @@ final class SignUpViewModel : ObservableObject {
     @Published var lastname = ""
     @Published var dob = Date()
     
+    @Published var errorMessage: String?
+    @Published var successMessage: String?
+
+    
+    init(){
+        self.errorMessage = nil
+        self.successMessage = nil
+    }
+
     func signup(){
         guard !email.isEmpty, !pw.isEmpty, !confirm_pw.isEmpty, !firstname.isEmpty, !lastname.isEmpty  else {
-            print("Please fill out all forms")
+            errorMessage = "Please fill out all forms"
             return
         }
         
         guard confirm_pw == pw else {
-                print("Passwords do not match")
+                errorMessage = "Passwords do not match"
                 return
             }
+        
+        let today = Date()
+        let calendar = Calendar.current
+        let ageComponents = calendar.dateComponents([.year], from: dob, to: today)
+        guard let age = ageComponents.year, age >= 18 else {
+            errorMessage = "You must be at least 18 years old to sign up"
+            return
+        }
         
         Task{
             do{
                 let returnedUserData = try await AuthenticationManager.shared.createUser(email: email, pw: pw)
+                successMessage = "Account created!"
                 print("Success")
                 print(returnedUserData)
             } catch {
-                print("Error: \(error)")
+                errorMessage = "Error: \(error)"
             }
         }
     }
@@ -86,6 +104,12 @@ struct SignUpView: View {
                         displayedComponents: [.date]
                     )
                 .padding()
+                if let errorMessage = viewModel.errorMessage {
+                    if let successMessage = viewModel.successMessage{}else{
+                        Text(errorMessage)
+                            .foregroundColor(.red)
+                    }
+                }
                 Button{
                     viewModel.signup()
                 } label: {
@@ -100,6 +124,10 @@ struct SignUpView: View {
                 } label: {
                     Text("Sign in instead")
                 }.padding(.bottom, 10)
+                if let successMessage = viewModel.successMessage {
+                    Text(successMessage)
+                        .foregroundColor(.green)
+                }
                 
             }.navigationTitle("New User")
         }
