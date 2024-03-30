@@ -8,11 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		131CB2BB2BACB3E4007AFF49 /* spartansApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131CB2BA2BACB3E4007AFF49 /* spartansApp.swift */; };
-		131CB2BD2BACB3E4007AFF49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131CB2BC2BACB3E4007AFF49 /* ContentView.swift */; };
 		131CB2BF2BACB3E6007AFF49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 131CB2BE2BACB3E6007AFF49 /* Assets.xcassets */; };
 		131CB2C22BACB3E6007AFF49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 131CB2C12BACB3E6007AFF49 /* Preview Assets.xcassets */; };
-		133FBA832BAD9FFF0051F0F1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133FBA822BAD9FFF0051F0F1 /* LoginView.swift */; };
-		13D08A822BB341A0000EA1C0 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D08A812BB341A0000EA1C0 /* SignupView.swift */; };
 		13D08A842BB4DE0D000EA1C0 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D08A832BB4DE0D000EA1C0 /* HomePageView.swift */; };
 		13D08A862BB76709000EA1C0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13D08A852BB76709000EA1C0 /* GoogleService-Info.plist */; };
 		13D08A892BB7686E000EA1C0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 13D08A882BB7686E000EA1C0 /* FirebaseAnalytics */; };
@@ -27,11 +24,8 @@
 /* Begin PBXFileReference section */
 		131CB2B72BACB3E4007AFF49 /* spartans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spartans.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		131CB2BA2BACB3E4007AFF49 /* spartansApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spartansApp.swift; sourceTree = "<group>"; };
-		131CB2BC2BACB3E4007AFF49 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		131CB2BE2BACB3E6007AFF49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		131CB2C12BACB3E6007AFF49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		133FBA822BAD9FFF0051F0F1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		13D08A812BB341A0000EA1C0 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		13D08A832BB4DE0D000EA1C0 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		13D08A852BB76709000EA1C0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		13D08A922BB796D3000EA1C0 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
@@ -83,9 +77,6 @@
 		131CB2B92BACB3E4007AFF49 /* spartans */ = {
 			isa = PBXGroup;
 			children = (
-				133FBA822BAD9FFF0051F0F1 /* LoginView.swift */,
-				13D08A812BB341A0000EA1C0 /* SignupView.swift */,
-				131CB2BC2BACB3E4007AFF49 /* ContentView.swift */,
 				13D08A8F2BB79590000EA1C0 /* Authentication */,
 				13D08A832BB4DE0D000EA1C0 /* HomePageView.swift */,
 				13D08A852BB76709000EA1C0 /* GoogleService-Info.plist */,
@@ -229,13 +220,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13D08A822BB341A0000EA1C0 /* SignupView.swift in Sources */,
 				13D08A952BB79728000EA1C0 /* SignInView.swift in Sources */,
-				133FBA832BAD9FFF0051F0F1 /* LoginView.swift in Sources */,
 				13D08A992BB7A5CF000EA1C0 /* AuthenticationManager.swift in Sources */,
 				13D08A932BB796D3000EA1C0 /* AuthView.swift in Sources */,
 				13D08A972BB7973E000EA1C0 /* SignUpView.swift in Sources */,
-				131CB2BD2BACB3E4007AFF49 /* ContentView.swift in Sources */,
 				131CB2BB2BACB3E4007AFF49 /* spartansApp.swift in Sources */,
 				13D08A842BB4DE0D000EA1C0 /* HomePageView.swift in Sources */,
 			);

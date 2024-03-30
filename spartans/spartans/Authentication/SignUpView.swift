@@ -16,6 +16,28 @@ final class SignUpViewModel : ObservableObject {
     @Published var firstname = ""
     @Published var lastname = ""
     @Published var dob = Date()
+    
+    func signup(){
+        guard !email.isEmpty, !pw.isEmpty, !confirm_pw.isEmpty, !firstname.isEmpty, !lastname.isEmpty  else {
+            print("Please fill out all forms")
+            return
+        }
+        
+        guard confirm_pw == pw else {
+                print("Passwords do not match")
+                return
+            }
+        
+        Task{
+            do{
+                let returnedUserData = try await AuthenticationManager.shared.createUser(email: email, pw: pw)
+                print("Success")
+                print(returnedUserData)
+            } catch {
+                print("Error: \(error)")
+            }
+        }
+    }
 }
 
 struct SignUpView: View {
@@ -65,6 +87,7 @@ struct SignUpView: View {
                     )
                 .padding()
                 Button{
+                    viewModel.signup()
                 } label: {
                     Text("Sign up")
                 }
