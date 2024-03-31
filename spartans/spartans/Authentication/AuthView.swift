@@ -18,27 +18,25 @@ struct AuthView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .cornerRadius(/*@START_MENU_TOKEN@*/15.0/*@END_MENU_TOKEN@*/)
-                
                     .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                    
                 
                 HStack{
                     Image(systemName: "star.leadinghalf.fill").foregroundColor(.orange)
                     Text("Sparks")
                         .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
                         .fontWeight(/*@START_MENU_TOKEN@*/.semibold/*@END_MENU_TOKEN@*/)
-                    // Download the free SF Symbols app to know the symbol name
+                    // Symbol names in the downloaded, free SF Symbols app
                     Image(systemName: "star.leadinghalf.fill").foregroundColor(.orange)
                 }
                 
-                Text("Let's re-kindle the magic between people")
+                Text("Re-kindle the magic between people")
                     .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
                     .multilineTextAlignment(.center)
                 
                 NavigationLink{
                     SignInView()
                 } label:{
-                    Text("Sign In with Email")
+                    Text("Sign in with email")
                         .font(.headline)
                         .foregroundColor(.white)
                         .frame(height: 55)

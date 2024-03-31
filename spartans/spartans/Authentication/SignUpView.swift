@@ -105,7 +105,9 @@ struct SignUpView: View {
                     )
                 .padding()
                 if let errorMessage = viewModel.errorMessage {
+                    // If there is a success message, don't print the previous error message
                     if let successMessage = viewModel.successMessage{}else{
+                        // print error message if there is no success message
                         Text(errorMessage)
                             .foregroundColor(.red)
                     }
