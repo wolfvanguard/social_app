@@ -45,7 +45,7 @@ final class AuthenticationManager{
     }
     
     // TODO: Asynchronous -> need to ping the server to see if this email is already present on sign in
-    func verifyIfEmailAlreadyExists(email:String) async throws -> Bool{
+    func verifyIfEmailAlreadyExists(email:String) throws -> Bool{
         if let authDataResult = try Auth.auth().getStoredUser(forAccessGroup: email){
             return true
         }
