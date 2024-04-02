@@ -32,18 +32,6 @@ final class SignUpViewModel : ObservableObject {
             return
         }
         
-        // TODO: Verifiy if email is already present in firebase database
-//        Task{
-//            do{
-//                if try AuthenticationManager.shared.verifyIfEmailAlreadyExists(email: email){
-//                    errorMessage = "Email already in use. Try signing in instead"
-//                    return
-//                }
-//            }catch{
-//                errorMessage = "Error: Email already in use. Try signing in instead"
-//            }
-//        }
-        
         guard confirm_pw == pw else {
                 errorMessage = "Passwords do not match"
                 return
